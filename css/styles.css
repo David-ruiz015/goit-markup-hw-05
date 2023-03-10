@@ -218,7 +218,9 @@ header .container .contacts-menu li .item:hover .icon {
   background-color: var(--background-black-240Perc);
   height: 100%;
   width: 100%;
+
 }
+
 /* ----------- Benefits section ----------- */
 .benefits .container .benefits-list {
   flex-wrap: wrap;

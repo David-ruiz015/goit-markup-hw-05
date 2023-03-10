@@ -55,9 +55,10 @@
     <!-- Hero section  -->
     <section class="hero bg-hero">
       <h1 class="hero-title">efective solutions for your bussines</h1>
-      <button class="button-primary" type="button">request or service</button>
+      <button class="button-primary" type="button" data-modal-open>request or service</button>
       <div class="overlay"></div>
     </section>
+
     <!-- Benefits section  -->
     <section class="benefits">
       <div class="container">
@@ -395,6 +396,13 @@
     </div>
 
   </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="button-close" data-modal-close>
+        </button>
+      </div>
+    </div>
+   <script src="./js/modal.js"></script>
 </body>
 
 </html>
