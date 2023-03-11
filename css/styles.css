@@ -133,7 +133,6 @@ header .container nav .nav-menu .page {
 
 .current::after{
   position: absolute;
-
   display:block;
   content: '';
   width: 48px;
@@ -142,7 +141,6 @@ header .container nav .nav-menu .page {
   top: 76px;
   left: 327px;
   bottom: -1px;
-
   background-color: var(--accent-color);
 }
 
@@ -357,7 +355,7 @@ header .container .contacts-menu li .item:hover .icon {
 }
 
 /*----------- Portfolio section -----------*/
-.portafolio .menu {
+.portfolio .menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,7 +363,7 @@ header .container .contacts-menu li .item:hover .icon {
   margin-bottom: 50px;
   list-style: none;
 }
-.portafolio .menu li button {
+.portfolio .menu li button {
   border: none;
   outline: none;
   color: var(--primary-black-color);
@@ -379,41 +377,41 @@ header .container .contacts-menu li .item:hover .icon {
   text-decoration: none;
   text-transform: capitalize;
 }
-.portafolio .menu li button:hover {
+.portfolio .menu li button:hover {
   box-shadow: rgba(82, 82, 82, 0.3) 0 3px 5px;
 }
 
-.portafolio .cards {
+.portfolio .cards {
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
 }
 
-.portafolio .cards li {
+.portfolio .cards li {
   margin-bottom: 50px;
   width: 360px;
   border: solid 1px var(--gray-1);
   list-style: none;
 }
-.portafolio .cards li:hover {
+.portfolio .cards li:hover {
   box-shadow: rgba(82, 82, 82, 0.3) 0 3px 5px;
 }
-.portafolio .cards li a h2 {
+.portfolio .cards li a h2 {
   color: var(--primary-black-color);
   padding: 15px;
 }
-.portafolio .cards li a p {
+.portfolio .cards li a p {
   color: var(--primary-text-color);
   font-size: 16px;
   padding: 15px;
 }
 
-.portafolio .cards li a img {
+.portfolio .cards li a img {
   width: 100%;
 }
 
-.portafolio .menu li button:hover,
-.portafolio .menu li button.current {
+.portfolio .menu li button:hover,
+.portfolio .menu li button.current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -516,3 +514,60 @@ footer .container aside ul li .icon {
 footer .container aside ul li:hover{
   background-color: var(--accent-color-hover);
 }
+
+/*-------Modal--------*/
+.backdrop{
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.2);;
+  
+  top: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(2);
+}
+
+
+
+.modal{
+  width: 528px;
+  min-height: 581px;
+  background-color: #ffffff;
+  
+  position: relative;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close{
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  right: 8px;
+  top: 8px;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000000;
+}
+
+
