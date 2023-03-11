@@ -178,7 +178,6 @@ header .container .contacts-menu li .item .icon.smartphone {
 
 header .container nav .nav-menu .page:hover,
 header .container nav .nav-menu .page:focus,
-header .container nav .nav-menu .page.current,
 header .container .contacts-menu li .item:hover,
 header .container .contacts-menu li .item:focus,
 header .container .contacts-menu li .item:hover .icon {
@@ -411,7 +410,7 @@ header .container .contacts-menu li .item:hover .icon {
 }
 
 .portfolio .menu li button:hover,
-.portfolio .menu li button.{
+.portfolio .menu li button{
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -542,8 +541,6 @@ footer .container aside ul li:hover{
   transform: scale(2);
 }
 
-
-
 .modal{
   width: 528px;
   min-height: 581px;
@@ -554,7 +551,7 @@ footer .container aside ul li:hover{
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-close{
+.btn-close{
   position: absolute;
 
   display: flex;
