@@ -411,7 +411,7 @@ header .container .contacts-menu li .item:hover .icon {
 }
 
 .portfolio .menu li button:hover,
-.portfolio .menu li button.current {
+.portfolio .menu li button.{
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
