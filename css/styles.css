@@ -120,6 +120,7 @@ header .container nav .nav-menu {
   
 }
 header .container nav .nav-menu .page {
+  position: relative;
   color: var(--primary-black-color);
   font-weight: 500;
   font-size: 14px;
@@ -132,14 +133,14 @@ header .container nav .nav-menu .page {
 }
 
 .current::after{
-  position: absolute;
+  position:absolute;
   display:block;
   content: '';
-  width: 48px;
+  width: 80px;
   height: 4px;
   border-radius: 2px;
-  top: 76px;
-  left: 327px;
+  top: 45px;
+  left: -15px;
   bottom: -1px;
   background-color: var(--accent-color);
 }
@@ -178,6 +179,7 @@ header .container .contacts-menu li .item .icon.smartphone {
 
 header .container nav .nav-menu .page:hover,
 header .container nav .nav-menu .page:focus,
+header .container nav .nav-menu .page.current,
 header .container .contacts-menu li .item:hover,
 header .container .contacts-menu li .item:focus,
 header .container .contacts-menu li .item:hover .icon {
@@ -521,6 +523,7 @@ footer .container aside ul li:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 
   width: 100vw;
   height: 100vh;
