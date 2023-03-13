@@ -377,9 +377,11 @@ header .container .contacts-menu li .item:hover .icon {
   line-height: 1.4;
   letter-spacing: 0.02em;
   padding: 10px 30px;
-
   text-decoration: none;
   text-transform: capitalize;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .menu li .btn:hover {
   box-shadow: rgba(82, 82, 82, 0.3) 0 3px 5px;
@@ -405,7 +407,7 @@ header .container .contacts-menu li .item:hover .icon {
   color: var(--primary-black-color);
   padding: 15px;
 }
-.portfolio .cards li a p {
+.portfolio-border{
   color: var(--primary-text-color);
   font-size: 16px;
   padding: 15px;
@@ -414,6 +416,9 @@ header .container .contacts-menu li .item:hover .icon {
 .portfolio .cards li a img {
   width: 100%;
 }
+.portfolio-item:hover .portfolio-overlay {
+  transform: translateY(0);
+}
 
 .portfolio-description {
   position: relative;
@@ -421,37 +426,51 @@ header .container .contacts-menu li .item:hover .icon {
 }
 
 .portfolio-overlay {
-  position: absolute;
+  position:absolute;
   display: inline-block;
   content: '';
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+  
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-
-
-.portfolio-description-text {
+.portfolio-description-text{
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
-
+  
   padding: 63px 24px;
-
-  font-size: 18px;
+  font-size: 18px ;
   line-height: 1.56;
-
   color: var(--primary-white-color);
+
+}
+
+.portfolio-border {
+  border: 1px solid #eeeeee;
+  border-top: transparent;
+  padding: 20px 24px;
 }
 
 .portfolio .menu li .btn:hover{
   background-color: var(--accent-color-hover);
   color: var(--primary-white-color);
+}
+.portfolio-item {
+  margin: 15px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
