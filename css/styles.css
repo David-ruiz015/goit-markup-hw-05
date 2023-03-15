@@ -50,8 +50,8 @@ section {
   border-radius: 4px;
   text-transform: capitalize;
   padding: 10px 20px;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .button-primary:hover {
   
@@ -118,9 +118,12 @@ header .container nav .nav-menu {
   display: flex;
   list-style: none;
   gap: 80px;
-  
-  
+
 }
+ header .nav-menu .list{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
 header .container nav .nav-menu .page {
   position: relative;
   color: var(--primary-black-color);
@@ -132,7 +135,7 @@ header .container nav .nav-menu .page {
   text-decoration: none;
   text-transform: capitalize;
   
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .current::after{
@@ -149,11 +152,14 @@ header .container nav .nav-menu .page {
 }
 
 
-header .container .contacts-menu {
+header .contacts-menu {
   display: flex;
   list-style: none;
   gap: 80px;
   
+}
+header .container .contacts-menu .list{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 header .container .contacts-menu li .item {
   display: flex;
@@ -169,7 +175,7 @@ header .container .contacts-menu li .item {
   text-decoration: none;
   height: 20px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 header .container .contacts-menu li .item .icon.email {
   fill: var(--primary-text-color);
@@ -190,6 +196,7 @@ header .container .contacts-menu li .item:focus,
 header .container .contacts-menu li .item:hover .icon {
   color: var(--accent-color);
   fill: #03a9f4;
+  
 }
 
 /* ----------- Hero section ----------- */
@@ -360,9 +367,18 @@ header .container .contacts-menu li .item:hover .icon {
 }
 .team-section .container .team-cards li ul li:hover a {
   background-color: var(--accent-color);
+  
 }
 .team-section .container .team-cards li ul li:hover a .icon {
   fill: var(--primary-white-color);
+  
+}
+
+.team1,
+.team2,
+.team3,
+.team4{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------- Portfolio section -----------*/
@@ -373,9 +389,12 @@ header .container .contacts-menu li .item:hover .icon {
   gap: 15px;
   margin-bottom: 50px;
   list-style: none;
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
+
+
+
 .portfolio .menu li .btn {
   
   border: 1px solid transparent;
@@ -390,19 +409,19 @@ header .container .contacts-menu li .item:hover .icon {
   padding: 10px 30px;
   text-decoration: none;
   text-transform: capitalize;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   
- 
 }
+
 .portfolio .menu li .btn:hover {
   box-shadow: rgba(82, 82, 82, 0.3) 0 3px 5px;
-
+  
 }
 
 .portfolio .cards{
   justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .cards li {
@@ -413,10 +432,14 @@ header .container .contacts-menu li .item:hover .icon {
 }
 .portfolio .cards li:hover {
   box-shadow: rgba(82, 82, 82, 0.3) 0 3px 5px;
+  
 }
 .portfolio .cards li a h2 {
   color: var(--primary-black-color);
   padding: 15px;
+  
+  
+
 }
 .portfolio-border{
   color: var(--primary-text-color);
@@ -472,6 +495,7 @@ header .container .contacts-menu li .item:hover .icon {
 .portfolio .menu li .btn:hover{
   background-color: var(--accent-color-hover);
   color: var(--primary-white-color);
+  
 }
 .portfolio-item {
   margin: 15px;
@@ -482,6 +506,7 @@ header .container .contacts-menu li .item:hover .icon {
 .portfolio-item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+   
 }
 
 
@@ -510,10 +535,11 @@ header .container .contacts-menu li .item:hover .icon {
   cursor: pointer;
   height: 92px;
   width: 170px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .customers .container ul li:hover {
   border: solid 1px var(--accent-color);
+  
 
 }
 .customers .container ul li .icon-customer {
@@ -521,6 +547,10 @@ header .container .contacts-menu li .item:hover .icon {
 }
 .customers .container ul li:hover .icon-customer {
   fill: var(--accent-color);
+  
+}
+.Custumers-Regular{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------- footer section ----------- */
@@ -552,15 +582,19 @@ footer .container address .contact {
   text-decoration: none;
   padding: 5px 0;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 footer .container address .contact:hover {
   color: var(--primary-white-color);
+  
 }
 footer .container aside p {
   color: var(--primary-white-color);
   font-weight: 700;
   margin-bottom: 20px;
+}
+.find-us{
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer .container aside ul{
@@ -582,7 +616,7 @@ footer .container aside ul li{
   height: 44px;
   width: 44px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 footer .container aside ul li .icon {
@@ -590,6 +624,7 @@ footer .container aside ul li .icon {
 }
 footer .container aside ul li:hover{
   background-color: var(--accent-color-hover);
+  
 }
 
 /*-------Modal--------*/
